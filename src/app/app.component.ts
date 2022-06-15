@@ -12,6 +12,6 @@ export class AppComponent {
     this.list.push({id:this.list.length,name:item});
   }
   removetesk(id:number){
-    this.list.splice(id,id);
+    this.list=this.list.filter(item=>item.id!==id);
   }
 }

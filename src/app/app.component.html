@@ -3,6 +3,6 @@
 <br><br>
 <button (click)="addtesk(tesk.value)">Add tesk</button>
 <br><br>
-<ol *ngfor="let item of list">
+<ul *ngFor="let item of list">
     <li>{{item.name}} <button (click)="removetesk(item.id)">Remove</button></li>
-</ol>
+</ul>
