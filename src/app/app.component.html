@@ -1,0 +1,8 @@
+<h1>{{title}}</h1>
+<input type="text" placeholder="Enter Tesk Name" #tesk/>
+<br><br>
+<button (click)="addtesk(tesk.value)">Add tesk</button>
+<br><br>
+<ol *ngfor="let item of list">
+    <li>{{item.name}} <button (click)="removetesk(item.id)">Remove</button></li>
+</ol>
